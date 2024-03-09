@@ -19,14 +19,32 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/blog', function () {
-    return view('blog',[
-        "title" => "blog"
+Route::get('/about', function () {
+    return view('about',[
+        "title" => "about"
     ]);
 });
 
-Route::get('/blog', function () {
-    return view('blog',[
-        "title" => "blog"
+Route::get('/alumni', function () {
+    return view('alumni',[
+        "title" => "alumni"
+    ]);
+});
+
+Route::get('/contact', function () {
+    return view('contact',[
+        "title" => "contact"
+    ]);
+});
+
+Route::get('/galeri', function () {
+    return view('galeri',[
+        "title" => "galeri"
+    ]);
+});
+
+Route::get('/pelatihan', function () {
+    return view('pelatihan',[
+        "title" => "pelatihan"
     ]);
 });
