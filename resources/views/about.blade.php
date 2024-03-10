@@ -1,1 +1,5 @@
-<p>Hello World</p>
+@extends('layout.main')
+
+@section('container')
+<p>Di isi konten About</p>
+@endsection
