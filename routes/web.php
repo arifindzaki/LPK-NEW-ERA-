@@ -33,7 +33,9 @@ Route::get('/alumni', function () {
 
 Route::get('/contact', function () {
     return view('contact',[
-        "title" => "contact"
+        "title" => "contact",
+        "email" => "lpk@gmail.com",
+        "nomor" => "08233942166"
     ]);
 });
 
