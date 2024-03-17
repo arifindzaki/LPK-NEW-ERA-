@@ -48,3 +48,8 @@ Route::get('/pelatihan', function () {
         "title" => "pelatihan"
     ]);
 });
+Route::get('/isipelatihan', function () {
+    return view('isipelatihan',[
+        "title" => "isipelatihan"
+    ]);
+});
