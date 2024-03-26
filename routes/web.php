@@ -33,7 +33,9 @@ Route::get('/alumni', function () {
 
 Route::get('/contact', function () {
     return view('contact',[
-        "title" => "contact"
+        "title" => "contact",
+        "email" => "lpk@gmail.com",
+        "nomor" => "08233942166"
     ]);
 });
 
@@ -46,5 +48,10 @@ Route::get('/galeri', function () {
 Route::get('/pelatihan', function () {
     return view('pelatihan',[
         "title" => "pelatihan"
+    ]);
+});
+Route::get('/isipelatihan', function () {
+    return view('isipelatihan',[
+        "title" => "isipelatihan"
     ]);
 });
