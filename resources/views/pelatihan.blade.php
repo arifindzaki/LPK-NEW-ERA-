@@ -40,7 +40,8 @@
 </head>
 <body>
     <section id="portfolio" class="portfolio">
-<div class="container">
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h2 style="text-align: center">Pelatihan</h2>
 <div class="row gx-4 gx-lg-5">
     <div class="col-12">
         {{-- <h1 class="text-center">Pelatihan</h1> --}}

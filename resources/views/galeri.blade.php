@@ -5,7 +5,7 @@
         <section id="portfolio" class="portfolio">
             <div class="container">
       
-              <h2 style="text-align: center">Galery</h2>
+              <h2 data-aos="fade-up" data-aos-duration="900" style="text-align: center">Galery</h2>
       
               <div class="row portfolio-container" data-aos="fade-up">
       
