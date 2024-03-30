@@ -39,14 +39,16 @@
 
 </head>
 <body>
-
+    <section id="portfolio" class="portfolio">
+<div class="container">
 <div class="row gx-4 gx-lg-5">
     <div class="col-12">
-        <h1 class="text-center">Pelatihan</h1>
+        {{-- <h1 class="text-center">Pelatihan</h1> --}}
     </div>
-
+    
     <div class="col-md-4 mb-5">
         <div class="card h-100">
+            
             <img src="img/about.jpg" class="card-img-top" alt="Pelatihan Desain Grafis">
             <div class="card-body">
                 <h2 class="card-title">Pelatihan Komputer</h2>
@@ -95,7 +97,9 @@
             <div class="card-footer"><a class="btn btn-primary btn-sm" href="isipelatihan.php">More Info</a></div>
         </div>
     </div>
-
+</div>
+</div>
+    </section>
     <!-- Tambahkan card lainnya sesuai kebutuhan -->
 
 </div>

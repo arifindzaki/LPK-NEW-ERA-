@@ -25,6 +25,7 @@
         }
     </style>
     <main>
+        <section id="portfolio" class="portfolio">
         <div class="container">    
             <div class="text-center pt-4">
                 <h2><strong>LPK IMIAH</strong></h2>
@@ -38,6 +39,7 @@
                 Dolorum maiores molestias optio minus officia sint necessitatibus temporibus fuga enim obcaecati debitis nihil, assumenda quos nam, ab expedita incidunt! Quibusdam non quis accusantium, aperiam placeat veritatis pariatur rem itaque?
             </p>
         </div>
+        </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

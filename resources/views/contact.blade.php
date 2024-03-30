@@ -1,9 +1,12 @@
 @extends('layout.main')
 
 @section('container')
+<div class="portfolio">
 <div class="row row-cols-1 row-cols-lg-2 mt-3">
     <div class="col">
+        
         <div class="m-0 pb-5 pb-lg-0">
+            
             <div class="d-flex justify-content-start mb-1">
                 <div>
                     <h2 data-aos="fade-up" data-aos-duration="3000" class="fw-bold mb-3">Kontak </h2>
@@ -31,6 +34,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3222567414587!2d112.582895!3d-7.429545799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7809c6ff897d89%3A0xa949a56426bc87dd!2sLKP%20ILMIAH%20Krian!5e0!3m2!1sid!2sid!4v1707808496821!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
         </section>
     </div>
+</div>
 </div>
 </div>
 @endsection
