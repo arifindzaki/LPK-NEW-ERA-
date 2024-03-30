@@ -180,27 +180,24 @@
 
         <div class="row portfolio-container" data-aos="fade-up">
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="img/bg biru.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="img/gbr3.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info " style="text-align: center; background-color: #1068ec">
-            <h4>Gambar 1</h4>
-            <p>ini adalah gambar 1</p>
+            <h4>Nugas Bareng</h4>
             </div>
         </div>
 
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="img/bg biru.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="img/gbr1.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info" style="text-align: center; background-color: #1068ec">
-                <h4>Gambar 2</h4>
-                <p>ini adalah gambar 2</p>
+                <h4>Pembagian Kelompok</h4>
             </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="img/bg biru.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="img/gbr2.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info" style="text-align: center; background-color: #1068ec">
-                <h4>Gambar 3</h4>
-                <p>Ini adalah Gamabr 3</p>
+                <h4>Praktek DKV</h4>
             </div>
             </div>
         
