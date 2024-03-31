@@ -116,7 +116,7 @@
         <div id="about" class="landing-page">
             <div class="content" data-aos-duration="1000">
                 <h4>Latar Belakang</h4>
-                <h1 style="color: rgb(58, 58, 243)">Selamat Datang di LPK ILMIAH</h1>
+                <h1 style="color: rgb(14, 106, 199)">Selamat Datang di LPK ILMIAH</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora tenetur sunt animi maxime rem exercitationem ipsa in repudiandae. Perspiciatis, labore alias quo aperiam nam illum ullam ratione! Excepturi, qui?Nesciunt, beatae suscipit. Dignissimos voluptatibus, asperiores esse impedit labore aut repellat quia at, eius debitis ab blanditiis iste vero nam ea enim aliquam, dolore exercitationem excepturi eos iure modi. Reprehenderit.</p>
             </div>
         </div>
@@ -172,7 +172,7 @@
 
     {{-- Gambar --}}
     <div class="text-center pt-4 mb-3" data-aos="fade-up" data-aos-duration="800">
-        <img src="img/fasilitas.png" class="img-thumbnail m-3" style="max-width: 70vw; border-radius: 25px;">
+        <img src="img/fasilitas.png" class="img-thumbnail m-3" style="max-width: 60vw; border-radius: 25px;">
     </div>
     {{-- galery 3--}}
     <div class="container">
