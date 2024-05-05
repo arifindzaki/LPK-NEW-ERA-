@@ -55,3 +55,35 @@ Route::get('/isipelatihan', function () {
         "title" => "isipelatihan"
     ]);
 });
+Route::get('/admin/index', function () {
+    return view('admin/index',[
+    "title" => "index"]);
+});
+Route::get('/admin/index', function () {
+    return view('admin/index',[
+    "title" => "index"]);
+});
+Route::get('/admin/halaman/pelatihan', function () {
+    return view('admin/halaman/pelatihan',[
+    "title" => "pelatihan"]);
+});
+Route::get('/admin/halaman/alumni', function () {
+    return view('admin/halaman/alumni',[
+    "title" => "pelatihan"]);
+});
+Route::get('/admin/halaman/tambahalumni', function () {
+    return view('admin/halaman/tambahalumni',[
+    "title" => "pelatihan"]);
+});
+Route::get('/admin/halaman/galery', function () {
+    return view('admin/halaman/galery',[
+    "title" => "galery"]);
+});
+Route::get('/admin/halaman/admin', function () {
+    return view('admin/halaman/admin',[
+    "title" => "admin"]);
+});
+Route::get('/admin/login', function () {
+    return view('admin/login',[
+    "title" => "login"]);
+});
