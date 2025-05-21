@@ -12,13 +12,14 @@
     <title>Admin LPK ILMIAH</title>
 
     <!-- Custom fonts for this template-->
-    <link href="../../admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.8/sweetalert2.css">
+    <link href="{{ url('') }}/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
-        href="../../admin/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        href="{{ url('') }}/admin/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../../admin/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="{{ url('') }}/admin/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -43,8 +44,8 @@
                 <hr class="sidebar-divider my-0">
     
                 <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link {{ ($title === "index" ? 'active' : '') }}" href="/admin/halaman/index">
+                <li class="nav-item">
+                    <a class="nav-link {{ ($title === "beranda" ? 'active' : '') }}" href="/admin/halaman/beranda">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Beranda</span></a>
                 </li>
@@ -60,14 +61,14 @@
     
                 <!-- Nav Item - Charts -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/halaman/pelatihan">
+                    <a class="nav-link {{ ($title === "pelatihan" ? 'active' : '') }}" href="/admin/halaman/pelatihan">
                         <i class="fas fa-fw fa-file"></i>
                         <span>Pelatihan Kursus</span></a>
                 </li>
     
                 <!-- Nav Item - Tables -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/halaman/alumni">
+                    <a class="nav-link {{ ($title === "alumni" ? 'active' : '') }}" href="/admin/halaman/alumni">
                         <i class="fas fa-fw fa-people-arrows"></i>
                         <span>Alumni</span></a>
                 </li>
@@ -86,6 +87,13 @@
                         <span>Admin</span></a>
                 </li>
     
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/halaman/contact">
+                        <i class="fas fa-fw fa-phone"></i>
+                        <span>Kontak</span></a>
+                </li>
+
                 <!-- Nav Item - Tables -->
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/login">
@@ -120,13 +128,13 @@
                         </button>
     
                         <!-- Topbar Search -->
-                        <form
-                            class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 ">
-                            <h4>Selamat Datang Admin LPK ILMIAH</h4>
+                        <form>
+                            {{-- class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 " > --}}
+                            <h4 style="text-align: center">Selamat Datang Admin LPK ILMIAH</h4>
                         </form>
     
                         <!-- Topbar Navbar -->
-                        <ul class="navbar-nav ml-auto">
+                        {{-- <ul class="navbar-nav ml-auto">
     
                             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                             <!-- Nav Item - User Information -->
@@ -135,7 +143,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Dzakik</span>
                                 <img class="img-profile rounded-circle"
-                                    src="../../admin/img/undraw_profile.svg">
+                                    src="{{ url('') }}/admin/img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -148,7 +156,7 @@
                             </div>
                         </li>
     
-                        </ul>
+                        </ul> --}}
                         
                     </nav>
                     <!-- End of Topbar -->
@@ -215,21 +223,25 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="../../admin/vendor/jquery/jquery.min.js"></script>
-    <script src="../../admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url('') }}/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ url('') }}/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../../admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{ url('') }}/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="../../admin/js/sb-admin-2.min.js"></script>
+    <script src="{{ url('') }}/admin/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="../../admin/vendor/chart.js/Chart.min.js"></script>
+    <script src="{{ url('') }}/admin/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="../../admin/js/demo/chart-area-demo.js"></script>
-    <script src="../../admin/js/demo/chart-pie-demo.js"></script>
+    <script src="{{ url('') }}/admin/js/demo/chart-area-demo.js"></script>
+    <script src="{{ url('') }}/admin/js/demo/chart-pie-demo.js"></script>
+
+    {{-- ini sweetalert --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.8/sweetalert2.min.js"></script>
 
 </body>
 

@@ -49,7 +49,7 @@
                     <h1 class="h3 mt-0 text-gray-800">Admin</h1>
                     <p class="mb-4">Pada halaman ini anda dapat mengelolah data Admin pada tabel dibawah, melakukan penambahan, edit dan hapus dan menampilkan pada halaman utama data Admin.
                         <div class="mb-4">
-                            <button type="button" class="btn btn-primary">Tambahkan</button>
+                            <a href="{{ route('admin.tambah') }}"type="button" class="btn btn-primary">Tambahkan</a>
                         </div>
                         
                     <!-- DataTales Example -->
@@ -62,24 +62,40 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>No</th>
                                             <th>Nama Admin</th>
                                             <th>Username</th>
-                                            <th>Password</th>
-                                            <th>Foto</th>
+                                            <th>email</th>
+                                            {{-- <th>Foto</th> --}}
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                            <th>No</th>
                                             <th>Nama Admin</th>
                                             <th>Ussername</th>
-                                            <th>Password</th>
-                                            <th>Foto</th>
+                                            <th>email</th>
+                                            {{-- <th>Foto</th> --}}
                                             <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-
+                                        <?php $no = 1; ?>
+                                        @foreach ($dataAdmin as $model)
+                                        <tr>
+                                            <td>{{ $no++ }}</td>
+                                            <td>{{ $model -> nama}}</td>
+                                            <td>{{ $model -> username}}</td>
+                                            <td>{{ $model -> email }}</td>
+                                            {{-- <td>{{ $model -> foto }}</td> --}}
+                                            <td>
+                                                <a href="{{ route('admin.edit',$model->id) }}" type="button" class="btn btn-warning" >Edit</a>
+                                                -
+                                                <a href="{{ route('admin.hapus',$model->id) }}" type="button" class="btn btn-danger" >Hapus</a>
+                                            </td>
+                                        </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

@@ -47,57 +47,20 @@
         {{-- <h1 class="text-center">Pelatihan</h1> --}}
     </div>
     
+    @foreach ($dataPelatihan as $model)
     <div class="col-md-4 mb-5">
         <div class="card h-100">
-            
-            <img src="img/about.jpg" class="card-img-top" alt="Pelatihan Desain Grafis">
+            <img src="{{  url('') }}/img/gambar/{{ $model->image }}" class="card-img-top" alt="Pelatihan Desain Grafis">
             <div class="card-body">
-                <h2 class="card-title">Pelatihan Komputer</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                <h2 class="card-title">{{ $model->judul }}</h2>
+                <p class="card-text">{{ $model->deskripsi }}</p>
             </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="isipelatihan.php">More Info</a></div>
+            <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://api.whatsapp.com/send?phone=+{{$model->phone}}&text=Hallo%20saya%20ingin%20bergabung%20dengan%20lpk%20ilmiah%20sidoarjo%2C%20tolong%20berikan%20informasi%20mengenai%20program%20yang%20ada{{$model->judul}}">More Info</a></div>
         </div>
     </div>
-    <div class="col-md-4 mb-5">
-        <div class="card h-100">
-            <img src="img/about.jpg" class="card-img-top" alt="Pelatihan Desain Grafis">
-            <div class="card-body">
-                <h2 class="card-title">Pelatihan Desain Grafis</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="isipelatihan.php">More Info</a></div>
-        </div>
-    </div>
-    <div class="col-md-4 mb-5">
-        <div class="card h-100">
-            <img src="img/about.jpg" class="card-img-top" alt="Pelatihan Desain Grafis">
-            <div class="card-body">
-                <h2 class="card-title">Pelatihan pemrogaman</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="isipelatihan.php">More Info</a></div>
-        </div>
-    </div>
-    <div class="col-md-4 mb-5">
-        <div class="card h-100">
-            <img src="img/about.jpg" class="card-img-top" alt="Pelatihan Desain Grafis">
-            <div class="card-body">
-                <h2 class="card-title">Pelatihan Bahasa Inggris</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="isipelatihan.php">More Info</a></div>
-        </div>
-    </div>
-    <div class="col-md-4 mb-5">
-        <div class="card h-100">
-            <img src="img/about.jpg" class="card-img-top" alt="Pelatihan Desain Grafis">
-            <div class="card-body">
-                <h2 class="card-title">Pelatihan Kewirausahaan</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary btn-sm" href="isipelatihan.php">More Info</a></div>
-        </div>
-    </div>
+    @endforeach
+
+
 </div>
 </div>
     </section>

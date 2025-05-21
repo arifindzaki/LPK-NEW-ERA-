@@ -49,7 +49,7 @@
                     <h1 class="h3 mt-0 text-gray-800">Galery</h1>
                     <p class="mb-4">Pada halaman ini anda dapat mengelolah data Galery pada tabel dibawah, melakukan penambahan, edit dan hapus dan menampilkan pada halaman utama data Galery.
                         <div class="mb-4">
-                            <button type="button" class="btn btn-primary">Tambahkan</button>
+                            <a href="{{ route('galery.tambah') }}" type="button" class="btn btn-primary">Tambahkan</a>
                         </div>
                         
                     <!-- DataTales Example -->
@@ -62,6 +62,7 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>No</th>
                                             <th>Judul</th>
                                             <th>Deskripsi</th>
                                             <th>Foto</th>
@@ -70,6 +71,7 @@
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                            <th>No</th>
                                             <th>Judul</th>
                                             <th>Deskripsi</th>
                                             <th>Foto</th>
@@ -77,7 +79,20 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-
+                                        <?php $no = 1; ?>
+                                        @foreach ($dataGalery as $model)
+                                        <tr>
+                                            <td>{{ $no++ }}</td>
+                                            <td>{{ $model -> judul}}</td>
+                                            <td>{{ $model -> deskripsi }}</td>
+                                            <td><img src="{{ url('') }}/img/gambar/{{ $model -> image }}"  alt="" width="100px"></td>
+                                            <td>
+                                                <a href="{{ route('galery.edit',$model->id) }}" type="button" class="btn btn-warning" >Edit</a>
+                                                -
+                                                <a href="{{ route('galery.hapus',$model->id) }}" type="button" class="btn btn-danger" >Hapus</a>
+                                            </td>
+                                        </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

@@ -38,114 +38,27 @@
 
             <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
-
+                    @foreach ($dataAlumni as $model)
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <h3 class="text-center mb-4">Your Title Here</h3>
+                                <h3 class="text-center mb-4">{{ $model->nama }}</h3>
                                 <div class="d-flex flex-column align-items-center">
-                                    <img src="img/WEE.jpeg" class="testimonial-img img-fluid mb-3" alt="">
+                                    <img src="{{  url('') }}/img/gambar/{{ $model->image }}" class="testimonial-img img-fluid mb-3" alt="">
                                     <div>
                                         {{-- isi --}}
                                         <div>
                                         </div>
                                     </div>
                                 </div>
-                                <h4 class="text-center">Bekerja di PT A</h4>
+                                <h4 class="text-center">{{ $model->status }}</h4>
                                 <p class="text-center">
-                                    Belajar di LPK IMIAH membantu saya mengasah skill saya dibidang DKV hingga saya diterima
-                                    kerja.
+                                    {{$model->kesan}}
                                 </p>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrap">
-                            <div class="testimonial-item">
-                                <h3 class="text-center mb-4">Your Title Here</h3>
-                                <div class="d-flex flex-column align-items-center">
-                                    <img src="img/about.jpg" class="testimonial-img img-fluid mb-3" alt="">
-                                    <div>
-                                        {{-- isi --}}
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4 class="text-center">Bekerja di PT A</h4>
-                                <p class="text-center">
-                                    Belajar di LPK IMIAH membantu saya mengasah skill saya dibidang DKV hingga saya diterima
-                                    kerja.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrap">
-                            <div class="testimonial-item">
-                                <h3 class="text-center mb-4">Your Title Here</h3>
-                                <div class="d-flex flex-column align-items-center">
-                                    <img src="img/about.jpg" class="testimonial-img img-fluid mb-3" alt="">
-                                    <div>
-                                        {{-- isi --}}
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4 class="text-center">Bekerja di PT A</h4>
-                                <p class="text-center">
-                                    Belajar di LPK IMIAH membantu saya mengasah skill saya dibidang DKV hingga saya diterima
-                                    kerja.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrap">
-                            <div class="testimonial-item">
-                                <h3 class="text-center mb-4">Your Title Here</h3>
-                                <div class="d-flex flex-column align-items-center">
-                                    <img src="img/about.jpg" class="testimonial-img img-fluid mb-3" alt="">
-                                    <div>
-                                        {{-- isi --}}
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4 class="text-center">Bekerja di PT A</h4>
-                                <p class="text-center">
-                                    Belajar di LPK IMIAH membantu saya mengasah skill saya dibidang DKV hingga saya diterima
-                                    kerja.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-wrap">
-                            <div class="testimonial-item">
-                                <h3 class="text-center mb-4">Your Title Here</h3>
-                                <div class="d-flex flex-column align-items-center">
-                                    <img src="img/about.jpg" class="testimonial-img img-fluid mb-3" alt="">
-                                    <div>
-                                        {{-- isi --}}
-                                        <div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h4 class="text-center">Bekerja di PT A</h4>
-                                <p class="text-center">
-                                    Belajar di LPK IMIAH membantu saya mengasah skill saya dibidang DKV hingga saya diterima
-                                    kerja.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
+                    @endforeach
                 </div>
                 <div class="swiper-pagination"></div>
             </div>

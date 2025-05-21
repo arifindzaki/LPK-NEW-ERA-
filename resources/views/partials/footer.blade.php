@@ -7,3 +7,13 @@
         </div>
     </div>
 </footer>
+<div id="myDiv"></div>
+<script>
+    $(function () {
+    $(''myDiv).floatingWhatsApp({
+        phone: '6285231429625',
+        size:'50px',
+        posisition: "right"
+    }); 
+    });
+</script>

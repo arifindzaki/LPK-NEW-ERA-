@@ -61,6 +61,13 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
+                <a class="nav-link{{ ($title === "kontak" ? 'active' : '') }}" href="/admin/halaman/contact">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Kontak</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-sign-out-alt"></i>
                     <span>Keluar</span></a>

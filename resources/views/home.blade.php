@@ -62,7 +62,7 @@
         <div class="carousel-item active">
             <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Selamat Datang di <span>LPK ILMIAH</span></h2>
-            <p class="animate__animated fanimate__adeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <p class="animate__animated fanimate__adeInUp">LPK Ilmiah adalah lembaga pendidikan yang menyelenggarakan kursus dan pelatihan ilmiah. LPK Ilmiah memberikan kesempatan kepada peserta untuk mendalami pengetahuan dan praktik dalam lingkup akademik dan profesional.</p>
             <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Selengkapnya</a>
             </div>
         </div>
@@ -70,8 +70,8 @@
         <!-- Slide 2 -->
         <div class="carousel-item ">
             <div class="carousel-container">
-            <h2 class="animate__animated animate__fadeInDown">Mengapa Harus LPK ILMIAH?</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <h2 class="animate__animated animate__fadeInDown">Kenapa Harus LPK ILMIAH?</h2>
+            <p class="animate__animated animate__fadeInUp">LPK Ilmiah dianggap sebagai pilihan yang tepat karena beberapa alasan. Pertama, LPK Ilmiah memiliki kurikulum yang komprehensif dan terstruktur dengan baik, yang dirancang untuk memenuhi kebutuhan pasar kerja saat ini. Kedua, LPK Ilmiah didukung oleh instruktur yang berkualitas dan berpengalaman dalam bidangnya masing-masing, memastikan pembelajaran yang efektif dan mendalam. Selain itu, LPK Ilmiah seringkali memiliki fasilitas dan teknologi terbaru untuk mendukung proses pembelajaran yang interaktif dan praktis. Akhirnya, sertifikasi atau pengakuan resmi dari LPK Ilmiah dapat meningkatkan daya saing dan peluang karir bagi peserta pelatihan.</p>
             <a href="#sertifikat" class="btn-get-started animate__animated animate__fadeInUp scrollto">Selengkapnya</a>
             </div>
         </div>
@@ -80,8 +80,8 @@
         <div class="carousel-item">
             <div class="carousel-container">
             <h2 class="animate__animated animate__fadeInDown">Bermacam Pelatihan di LPK IMLIAH</h2>
-            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-            <a href="#pelatihan" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            <p class="animate__animated animate__fadeInUp">Ada 5 macam bidang program pelatihan yaitu : Kewirausahaan, Pemrograman, Komputer, Bahasa Inggris dan Desain Grafis</p>
+            <a href="#pelatihan" class="btn-get-started animate__animated animate__fadeInUp scrollto">Selengkapnya</a>
             </div>
         </div>
 
@@ -112,61 +112,72 @@
 
     </section><!-- End Hero -->
 
+    {{-- <header id="header" class="fixed-top d-flex align-items-center  header-transparent "style="background-color: "> --}}
+        <!-- Your header content -->
+    </header>
+
+    <!-- Your existing HTML content -->
+
+    <!-- WhatsApp Button -->
+
+    <a href="https://wa.wizard.id/2671f1"  class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a> 
+
+    <!-- @foreach ($dataContact as $model)
+    <a href="https://api.whatsapp.com/send?phone=+{{$model->phone}}&text=Hallo%20saya%20ingin%20bergabung%20dengan%20lpk%20ilmiah%20sidoarjo%2C%20tolong%20berikan%20informasi%20mengenai%20program%20yang%20ada" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    @endforeach -->
+
     <div class="container mt-4">
         <div id="about" class="landing-page">
             <div class="content" data-aos-duration="1000">
                 <h4>Latar Belakang</h4>
                 <h1 style="color: rgb(14, 106, 199)">Selamat Datang di LPK ILMIAH</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora tenetur sunt animi maxime rem exercitationem ipsa in repudiandae. Perspiciatis, labore alias quo aperiam nam illum ullam ratione! Excepturi, qui?Nesciunt, beatae suscipit. Dignissimos voluptatibus, asperiores esse impedit labore aut repellat quia at, eius debitis ab blanditiis iste vero nam ea enim aliquam, dolore exercitationem excepturi eos iure modi. Reprehenderit.</p>
+                <p>LPK Ilmiah adalah lembaga pendidikan dan kursus. Berlokasi di Perum Griya Krian Residence Blok Anggrek G 11 Krian, Kecamatan Krian, Kabupaten Sidoarjo. LPK Ilmiah ini menyediakan 5 program yakni kewirausahaan, bahasa Inggris, pemrograman, komputer, dan desain komunikasi visual (DKV). Melalui program tersebut LPK Ilmiah bertujuan Untuk meningkatkan ketrampilan dalam bidang tersebut serta memberikan kesiapan kerja secara professional. LPK Ilmiah juga memberikan perhatian khusus terhadap pengembangan soft skills.</p>
             </div>
         </div>
     </div>
+    {{-- ini wa --}}
+    {{-- <header >
+        <!-- Your header content -->
+    </header> --}}
+
+    <!-- Your existing HTML content -->
+
+    <!-- WhatsApp Button -->
+    
+    {{-- ini wa --}}
 
     {{-- Gambar --}}
     <div class="" id="sertifikat">
     <div class="text-center pt-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
-        <img src="img/sertifikat.png" class="img-thumbnail m-3" style="max-width: 70vw; border-radius: 25px;">
+        <img src="img/sertifikatasli.png" class="img-thumbnail m-3" style="max-width: 70vw; border-radius: 25px;">
     </div>
 </div>
     {{-- pelatihan --}}
-    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" id="pelatihan" data-aos="fade-up" data-aos-duration="1000">
         <h2 style="text-align: center" id="pelatihan" >Pelatihan</h2>
     <div class="row gx-4 gx-lg-5">
         <div class="col-12">
             {{-- <h1 class="text-center">Pelatihan</h1> --}}
         </div>
         
+        @foreach($dataPelatihan as $model)
         <div class="col-md-4 mb-5">
             <div class="card h-100">
                 
-                <img src="img/about.jpg" class="card-img-top" alt="Pelatihan Desain Grafis">
+                <img src="{{  url('') }}/img/gambar/{{ $model->image }}" class="card-img-top" alt="Pelatihan Desain Grafis">
                 <div class="card-body">
-                    <h2 class="card-title">Pelatihan Komputer</h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    <h2 class="card-title">{{$model->judul}}</h2>
+                    <p class="card-text">{{$model->deskripsi}}</p>
                 </div>
-                <div class="card-footer"><a class="btn btn-primary btn-sm" href="isipelatihan.php">More Info</a></div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://api.whatsapp.com/send?phone=+{{$model->phone}}&text=Hallo%20saya%20ingin%20bergabung%20dengan%20lpk%20ilmiah%20sidoarjo%2C%20tolong%20berikan%20informasi%20mengenai%20program%20yang%20ada{{$model->judul}}">More Info</a></div>
             </div>
         </div>
-        <div class="col-md-4 mb-5">
-            <div class="card h-100">
-                <img src="img/about.jpg" class="card-img-top" alt="Pelatihan Desain Grafis">
-                <div class="card-body">
-                    <h2 class="card-title">Pelatihan Desain Grafis</h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                </div>
-                <div class="card-footer"><a class="btn btn-primary btn-sm" href="isipelatihan.php">More Info</a></div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-5">
-            <div class="card h-100">
-                <img src="img/about.jpg" class="card-img-top" alt="Pelatihan Desain Grafis">
-                <div class="card-body">
-                    <h2 class="card-title">Pelatihan pemrogaman</h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                </div>
-                <div class="card-footer"><a class="btn btn-primary btn-sm" href="isipelatihan.php">More Info</a></div>
-            </div>
-        </div>
+        @endforeach
+        
     </div>
     </div>
 
@@ -179,27 +190,16 @@
         <h2 data-aos="fade-up" data-aos-duration="900" style="text-align: center">Galery</h2>
 
         <div class="row portfolio-container" data-aos="fade-up">
+        
+
+        @foreach($dataGalery as $model)
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="img/gbr3.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info " style="text-align: center; background-color: #1068ec">
-            <h4>Nugas Bareng</h4>
-            </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="img/gbr1.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="{{  url('') }}/img/gambar/{{ $model->image }}" class="img-fluid" alt=""></div>
             <div class="portfolio-info" style="text-align: center; background-color: #1068ec">
-                <h4>Pembagian Kelompok</h4>
+                <h4>{{$model->judul}}</h4>
             </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="img/gbr2.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info" style="text-align: center; background-color: #1068ec">
-                <h4>Praktek DKV</h4>
-            </div>
-            </div>
+            @endforeach
         
         </div>
     </div>

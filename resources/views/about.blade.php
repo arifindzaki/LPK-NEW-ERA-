@@ -32,12 +32,7 @@
                 <img src="img/about.jpg" class="img-thumbnail m-3" style="max-width: 70vw; border-radius: 25px;">
             </div>
             <p style="text-align: justify;" class="lead mt-2 mb-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum repudiandae, sunt fugit ab et a soluta enim ipsam officiis, amet cumque dolore exercitationem, laborum fuga. Enim aspernatur architecto nobis quae!
-                Corrupti minima totam perferendis! Natus veniam, in possimus minus enim tempore nisi numquam, consectetur atque nihil libero vel eveniet eius dolores officiis cum necessitatibus praesentium magnam dolorem reiciendis nemo sapiente.
-                Voluptatem consequuntur ipsum aperiam suscipit quos omnis sit? Itaque nihil illo perspiciatis esse voluptatibus, ratione ut iste quia dolores explicabo nulla harum amet pariatur earum similique molestias a delectus praesentium?
-                Voluptatibus ratione natus molestias et tempora qui vitae. Iusto assumenda, dolores excepturi nemo deserunt porro minus quibusdam deleniti blanditiis qui itaque facere cupiditate distinctio enim pariatur omnis quasi. Animi, rem?
-                Dolorum maiores molestias optio minus officia sint necessitatibus temporibus fuga enim obcaecati debitis nihil, assumenda quos nam, ab expedita incidunt! Quibusdam non quis accusantium, aperiam placeat veritatis pariatur rem itaque?
-            </p>
+                LPK Ilmiah adalah lembaga pendidikan dan kursus. Berlokasi di Perum Griya Krian Residence Blok Anggrek G 11 Krian, Kecamatan Krian, Kabupaten Sidoarjo. LPK Ilmiah ini menyediakan 5 program yakni kewirausahaan, bahasa Inggris, pemrograman, komputer, dan desain komunikasi visual (DKV). Melalui program tersebut LPK Ilmiah bertujuan Untuk meningkatkan ketrampilan dalam bidang tersebut serta memberikan kesiapan kerja secara professional. LPK Ilmiah juga memberikan perhatian khusus terhadap pengembangan soft skills. Benefit yang didapat selain pembekalan soft skill yang dibutuhkan di dunia kerja anda juga akan mendapatkan sertifikat mengikuti pelatihan di LPK ILMIAH.</p>
         </div>
     </div>
     </main>

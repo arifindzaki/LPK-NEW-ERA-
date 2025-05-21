@@ -16,11 +16,16 @@
             </div>
             <div class="ket-email" data-aos="fade-up" data-aos-duration="1000">
             <p class="mb-2 fw-bold">Email :</p>
-            <p class="mb-3">{{ $email }}</p>
+            @foreach ($dataContact as $model)
+                
+            <p class="mb-3">{{ $model->email }}</p> 
             <p class="mb-2 fw-bold">Kontak :</p>
-            <p class="mb-1">Telepon : {{ $nomor }} (Whatsapp)</p>
-            <a href="https://api.whatsapp.com/send/?phone=62812282754446" target="_blank" class="btn btn-primary shadow ">Chat Sekarang!</a>
-            </div>
+            <p class="mb-1">Telepon : {{ $model->phone}}</p>
+            
+            <a href="https://api.whatsapp.com/send/?phone={{ $model->phone}}" target="_blank" class="btn btn-primary shadow ">Chat Sekarang!</a>
+            
+            @endforeach
+        </div>
         </div>
     </div>
     <div class="col">
