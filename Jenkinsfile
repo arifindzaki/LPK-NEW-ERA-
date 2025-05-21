@@ -15,21 +15,24 @@ pipeline {
         stage('Clean up existing containers') {
             steps {
                 script {
-                    // Stop and remove all running containers
-                    sh 'docker ps -aq && docker stop $(docker ps -aq) || true && docker rm $(docker ps -aq) || true'
+                    // Menggunakan bat untuk Windows
+                    bat '''
+                    for /f "tokens=*" %%i in ('docker ps -q') do docker stop %%i
+                    for /f "tokens=*" %%i in ('docker ps -aq') do docker rm %%i
+                    '''
                 }
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t $DOCKER_IMAGE .'
+                bat "docker build -t %DOCKER_IMAGE% ."
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 8000:8000 --name laravel-container $DOCKER_IMAGE'
+                bat "docker run -d -p 8000:8000 --name laravel-container %DOCKER_IMAGE%"
             }
         }
     }
