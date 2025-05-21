@@ -15,10 +15,20 @@ pipeline {
         stage('Clean up existing containers') {
             steps {
                 script {
-                    // Menggunakan bat untuk Windows
                     bat '''
-                    for /f "tokens=*" %%i in ('docker ps -q') do docker stop %%i
-                    for /f "tokens=*" %%i in ('docker ps -aq') do docker rm %%i
+                    @echo off
+                    echo Stopping running containers if any...
+                    for /f "delims=" %%i in ('docker ps -q') do (
+                        echo Stopping container %%i
+                        docker stop %%i
+                    )
+
+                    echo Removing all containers if any...
+                    for /f "delims=" %%i in ('docker ps -aq') do (
+                        echo Removing container %%i
+                        docker rm %%i
+                    )
+                    exit /b 0
                     '''
                 }
             }
@@ -26,13 +36,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat "docker build -t %DOCKER_IMAGE% ."
+                bat 'docker build -t %DOCKER_IMAGE% .'
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                bat "docker run -d -p 8000:8000 --name laravel-container %DOCKER_IMAGE%"
+                bat 'docker run -d -p 8000:8000 --name laravel-container %DOCKER_IMAGE%'
             }
         }
     }
